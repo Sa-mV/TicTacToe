@@ -48,32 +48,7 @@ int takeInput(int& turn, int * usedSlot, char currentPlayer) {
 
 void updateLayout(std::string* layout, int newSlot, char& currentPlayer) {
     
-    switch(newSlot) {
-        case 2:
-            newSlot = 3;
-            break;
-        case 3:
-            newSlot = 5;
-            break;
-        case 4:
-            newSlot = 7;
-            break;
-        case 5:
-            newSlot = 9;
-            break;
-        case 6:
-            newSlot = 11;
-            break;
-        case 7:
-            newSlot = 13;
-            break;
-        case 8:
-            newSlot = 15;
-            break;
-        case 9:
-            newSlot = 17;
-            break;
-    }
+    newSlot = newSlot*2 -1;
     
     if (currentPlayer == 'X') {
         layout[newSlot] = "X";
