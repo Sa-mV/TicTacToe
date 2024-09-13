@@ -28,6 +28,8 @@ This project helped me enforce the following concepts:
 ### How to Install and Run:
 ##### For  Mac Users:
 
+- Download and run the executable file "TicTacToe-download". Alternatively, clone the entire repository by following these steps:
+
 - **Open the terminal**
 - **Clone the Repository:**
 	Using SSH:
