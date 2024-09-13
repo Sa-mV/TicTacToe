@@ -23,7 +23,7 @@ This project helped me enforce the following concepts:
 
 ### Program in Action:
 
-![Image of a game state](images/image-of-a-game-state)
+![Image of a game state](./images/image-of-a-game-state)
 
 ### How to Install and Run:
 ##### For  Mac Users:
