@@ -18,7 +18,7 @@ void print(const std::string* layout) {
 
 int takeInput(int& turn, int * usedSlot, char currentPlayer) {
     
-    int newSlot;
+    char inputSlot;
     int currentPlayerInt;
     
     if (currentPlayer == 'X')
@@ -27,12 +27,16 @@ int takeInput(int& turn, int * usedSlot, char currentPlayer) {
         currentPlayerInt = 2;
     
     std::cout << "Player " << currentPlayerInt << ", enter a slot number: ";
-    std::cin >> newSlot;
+    std::cin >> inputSlot;
     
-    while (newSlot < 1 || newSlot > 9) {
+    while (inputSlot < 49 || inputSlot > 57 || std::cin.peek() != '\n') {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << "Invalid slot. Try again: ";
-        std::cin >> newSlot;
+        std::cin >> inputSlot;
     }
+    
+    int newSlot = inputSlot - '0';
     
     for (int i = 0; i < turn; i++) {
         while (newSlot == usedSlot[i]) {
