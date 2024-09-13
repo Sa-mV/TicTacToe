@@ -1,2 +1,7 @@
 .DS_Store
+TicTacToe.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/
+TicTacToe.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+TicTacToe.xcodeproj/project.xcworkspace/xcuserdata/ahanifa.xcuserdatad/UserInterfaceState.xcuserstate
+TicTacToe.xcodeproj/xcuserdata/ahanifa.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+TicTacToe.xcodeproj/xcuserdata/ahanifa.xcuserdatad/xcschemes/xcschememanagement.plist
 
